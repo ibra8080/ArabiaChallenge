@@ -44,7 +44,6 @@ def main():
     question_data = get_question(1)  
     player_answer = request_answer()
     compare_answer(player_answer, question_data["answer"])
-    print()
  
         
 
