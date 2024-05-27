@@ -24,7 +24,7 @@ def validate_answer(player_answer):
     valid_answers = ['1', '2', '3', '4']
     while player_answer not in valid_answers:
         print("Invalid input. Please enter 1, 2, 3, or 4.")
-    print(player_answer)
+    return player_answer
 
 
 get_question(1)
