@@ -12,11 +12,15 @@ def get_question(ques_num):
 
 
 def request_answer():
-    player_answer = input("Your answer (1, 2, 3, or 4): ").strip()
+    """
+    Request answer from input 
+    """
+    while True:
+        print('Please enter your answer.')
+        player_answer = input("Your answer: ").strip()
 
-    if validate_answer(player_answer):
-        print('Data is valid')
-        
+        if validate_answer(player_answer):
+            break
     return player_answer
 
 
@@ -24,7 +28,8 @@ def validate_answer(player_answer):
     valid_answers = ['1', '2', '3', '4']
     while player_answer not in valid_answers:
         print("Invalid input. Please enter 1, 2, 3, or 4.")
-    return player_answer
+        return False
+    return True
 
 
 get_question(1)
