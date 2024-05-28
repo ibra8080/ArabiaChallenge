@@ -71,7 +71,9 @@ def compare_answer(player_answer, correct_answer, score):
 #         print(f"Your Score : {score}")   
 #     else:
 #         return 0
+def final_score(total_ques, score):
     
+    print(f"Your final score : {score} out of {total_ques}")
 
 
 def main():
@@ -86,6 +88,9 @@ def main():
         score = compare_answer(player_answer, question_data["answer"], score)
         # score_collector(compare_answer, score)
         # score = score_collector(compare_answer, score)
+    
+    final_score(len(questions), score)
+        
 
         
 
