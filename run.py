@@ -35,15 +35,16 @@ def validate_answer(player_answer):
 
 def compare_answer(player_answer, correct_answer):
     if player_answer == correct_answer:
-        print("True")
+        print("Correct !")
     else:
         print(f"Wrong. The correct answer is {correct_answer}.")
 
 
 def main():
-    question_data = get_question(1)  
-    player_answer = request_answer()
-    compare_answer(player_answer, question_data["answer"])
+    for i in range(len(questions)):
+        question_data = get_question(i)  
+        player_answer = request_answer()
+        compare_answer(player_answer, question_data["answer"])
  
         
 
