@@ -5,6 +5,9 @@ from bidi.algorithm import get_display
 
 
 def reshape_text(text):
+    """
+    Correct Arabic typo from right to left 
+    """
     reshaped_text = arabic_reshaper.reshape(text)
     bidi_text = get_display(reshaped_text)
     return bidi_text
@@ -15,9 +18,9 @@ def get_question(ques_num):
     Get Question from questions sheet
     """
     question_data = questions[ques_num]  
-    print(reshape_text(question_data["question"]))
+    print(reshape_text(question_data["question"])) # Apply reshap_text with quistion
     for choice in question_data["choices"]:
-        print(reshape_text(choice))
+        print(reshape_text(choice))  # Apply reshap_text with choice
     return question_data
 
 
