@@ -135,31 +135,39 @@ ArabiaChallenge offers a variety of features designed to enhance the user's lear
 By combining these features, ArabiaChallenge provides a comprehensive and enjoyable way for users to test and improve their Arabic language skills. Each feature has been carefully designed to contribute to an engaging and educational experience.
 
 
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑 START OF NOTES (to be deleted)
-
-Repeat as necessary for as many features as your site contains.
-
-Hint: the more, the merrier!
-
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
-
 ### Future Features
 
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑 START OF NOTES (to be deleted)
+To further enhance the ArabiaChallenge experience, several future features are planned. These features aim to improve user engagement, provide additional learning resources, and create a more interactive and personalized experience.
 
-Do you have additional ideas that you'd like to include on your project in the future?
-Fantastic! List them here!
-It's always great to have plans for future improvements!
-Consider adding any helpful links or notes to help remind you in the future, if you revisit the project in a couple years.
+### 1. Leaderboard
 
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
+**Feature:** Leaderboard  
+**Description:** Implement a leaderboard to display the top scores of users.  
+**Value:** Encourages healthy competition among users, motivating them to improve their scores and engage more frequently with the quiz.  
+**Implementation Plan:** Store user scores in a database and display the top scores on a leaderboard page. This feature will require user authentication to track individual progress.
 
-- YOUR-TITLE-FOR-FUTURE-FEATURE-#1
-    - Any additional notes about this feature.
-- YOUR-TITLE-FOR-FUTURE-FEATURE-#2
-    - Any additional notes about this feature.
-- YOUR-TITLE-FOR-FUTURE-FEATURE-#3
-    - Any additional notes about this feature.
+### 2. Multiple Difficulty Levels
+
+**Feature:** Multiple Difficulty Levels  
+**Description:** Introduce different difficulty levels (e.g., beginner, intermediate, advanced) for the quiz questions.  
+**Value:** Provides a tailored learning experience for users of varying proficiency levels, making the game more accessible and challenging for all users.  
+**Implementation Plan:** Categorize questions by difficulty level and allow users to select their preferred level before starting the quiz.
+
+### 3. Timed Challenges
+
+**Feature:** Timed Challenges  
+**Description:** Add a timed challenge mode where users must answer questions within a certain time limit.  
+**Value:** Adds an element of urgency and excitement, enhancing the quiz's challenge and testing users' quick thinking and recall abilities.  
+**Implementation Plan:** Implement a countdown timer for each question and adjust the scoring system to reward quick and correct answers.
+
+### 4. Detailed Explanations
+
+**Feature:** Detailed Explanations  
+**Description:** Provide detailed explanations for each answer after the user responds.  
+**Value:** Enhances learning by explaining why an answer is correct or incorrect, helping users understand the material better and retain information.  
+**Implementation Plan:** Include explanations in the question data and display them after the user submits an answer.
+
+These future features aim to make ArabiaChallenge more engaging, educational, and enjoyable, ultimately helping users improve their Arabic language skills more effectively.
 
 ## Tools & Technologies Used
 
