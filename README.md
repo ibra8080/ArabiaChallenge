@@ -172,7 +172,6 @@ These future features aim to make ArabiaChallenge more engaging, educational, an
 ## Tools & Technologies Used
 
 
-- ⚠️⚠️ REQUIRED <-- delete me ⚠️⚠️
 - [![Markdown Builder](https://img.shields.io/badge/Markdown_Builder-grey?logo=markdown&logoColor=000000)](https://tim.2bn.dev/markdown-builder) used to generate README and TESTING templates.
 - [![Git](https://img.shields.io/badge/Git-grey?logo=git&logoColor=F05032)](https://git-scm.com) used for version control. (`git add`, `git commit`, `git push`)
 - [![GitHub](https://img.shields.io/badge/GitHub-grey?logo=github&logoColor=181717)](https://github.com) used for secure online code storage.
@@ -196,45 +195,29 @@ Below is the flowchart of the main process of this Python program. It shows the 
 
 ### Classes & Functions
 
-The program uses classes as a blueprint for the project's objects (OOP). This allows for the object to be reusable.
+The ArabiaChallenge project uses various functions to modularize the code, ensuring reusability, maintainability, and clarity. Here are the primary functions used in this application:
 
-```python
-class Person:
-    """ Insert docstring comments here """
-    def __init__(self, name, age, health, inventory):
-        self.name = name
-        self.age = age
-        self.health = health
-        self.inventory = inventory
-```
-
-The primary functions used on this application are:
-
-- `get_sales_data()`
-    - Get sales figures input from the user.
+- `reshape_text(text)`
+  - Corrects the display of Arabic text to ensure it appears right-to-left and properly shaped.
+- `get_question(ques_num)`
+    - Retrieves and displays a question and its choices from the list of questions.
 - `validate_data()`
     - Converts all string values into integers.
-- `update_worksheet()`
-    - Update the relevant worksheet with the data provided.
-- `calculate_surplus_data()`
-    - Compare sales with stock and calculate the surplus for each item type.
-- `get_last_5_entries_sales()`
-    - Collects columns of data from sales worksheet.
-- `calculate_stock_data()`
-    -  Calculate the average stock for each item type, adding 10%.
+- `compare_answer(player_answer, correct_answer, score)`
+  - Compares the user's answer with the correct answer, updates the score, and provides feedback on the user's answer.
+
+- `final_score(total_ques, score)`
+  - Displays the user's final score after all questions have been answered.
+
 - `main()`
-    - Run all program functions.
+  - Runs the main loop of the quiz, calling other functions to display questions, collect answers, and track the score.
 
 ### Imports
 
 I've used the following Python packages and/or external imported packages.
 
 - `gspread`: used with the Google Sheets API
-- `google.oauth2.service_account`: used for the Google Sheets API credentials
-- `time`: used for adding time delays
 - `os`: used for adding a `clear()` function
-- `colorama`: used for including color in the terminal
-- `random`: used to get a random choice from a list
 
 ## Testing
 
