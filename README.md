@@ -75,7 +75,8 @@ ArabiaChallenge offers a variety of features designed to enhance the user's lear
 **Description:** The game starts with a welcoming message to greet the user.  
 **Value:** Sets a friendly and inviting tone for the game, making users feel welcomed.  
 **Implementation:** Implemented in the `main` function with a simple print statement.
-![Welcome Message](screenshots/welcome_message.png)
+![Welcome Message](![Final Score Display](documentation/final_score_display.png)
+/welcome_message.png)
 
 - ### Question Presentation
 
@@ -83,7 +84,8 @@ ArabiaChallenge offers a variety of features designed to enhance the user's lear
 **Description:** Displays a question and multiple-choice answers to the user.  
 **Value:** Provides a clear and structured format for users to read and understand the question and possible answers.  
 **Implementation:** Implemented in the `get_question` function, which retrieves and prints the question and choices.
-![Question Presentation](screenshots/question_presentation.png)
+![Question Presentation](![Final Score Display](documentation/final_score_display.png)
+/question_presentation.png)
 
 - ### Arabic Text Reshaping
 
@@ -91,7 +93,8 @@ ArabiaChallenge offers a variety of features designed to enhance the user's lear
 **Description:** Corrects the display of Arabic text to be right-to-left and properly joined.  
 **Value:** Ensures that Arabic text is readable and properly formatted, enhancing the user experience for Arabic speakers.  
 **Implementation:** Utilizes the `arabic_reshaper` and `bidi.algorithm` libraries in the `reshape_text` function.
-![Arabic Text Reshaping](screenshots/arabic_text_reshaping.png)
+![Arabic Text Reshaping](![Final Score Display](documentation/final_score_display.png)
+/arabic_text_reshaping.png)
 
 - ### User Answer Input
 
@@ -99,7 +102,8 @@ ArabiaChallenge offers a variety of features designed to enhance the user's lear
 **Description:** Prompts the user to enter their answer.  
 **Value:** Engages the user by allowing them to participate actively in the quiz.  
 **Implementation:** Implemented in the `request_answer` function, which ensures valid input through a loop and validation function.
-![User Answer Input](screenshots/user_answer_input.png)
+![User Answer Input](![Final Score Display](documentation/final_score_display.png)
+/user_answer_input.png)
 
 - ### Answer Validation
 
@@ -107,7 +111,8 @@ ArabiaChallenge offers a variety of features designed to enhance the user's lear
 **Description:** Validates that the user's input is one of the acceptable answers (1, 2, 3, or 4).  
 **Value:** Prevents invalid inputs, ensuring that the game proceeds smoothly without errors.  
 **Implementation:** Implemented in the `validate_answer` function.
-![Answer Validation](screenshots/answer_validation.png)
+![Answer Validation](![Final Score Display](documentation/final_score_display.png)
+/answer_validation.png)
 
 - ### Answer Comparison and Scoring
 
@@ -115,7 +120,8 @@ ArabiaChallenge offers a variety of features designed to enhance the user's lear
 **Description:** Compares the user's answer to the correct answer, updates the score, and provides feedback.  
 **Value:** Gives immediate feedback, helping users learn from their mistakes and rewarding correct answers with score increments.  
 **Implementation:** Implemented in the `compare_answer` function, which adjusts the score and provides feedback.
-![Answer Comparison and Scoring](screenshots/answer_comparison_scoring.png)
+![Answer Comparison and Scoring](![Final Score Display](documentation/final_score_display.png)
+/answer_comparison_scoring.png)
 
 - ### Final Score Display
 
@@ -123,7 +129,7 @@ ArabiaChallenge offers a variety of features designed to enhance the user's lear
 **Description:** Displays the user's final score after all questions have been answered.  
 **Value:** Provides a summary of the user's performance, giving a sense of achievement and areas for improvement.  
 **Implementation:** Implemented in the `final_score` function, which prints the final score.
-![Final Score Display](screenshots/final_score_display.png)
+![Final Score Display](documentation/final_score_display.png)
 
 #
 By combining these features, ArabiaChallenge provides a comprehensive and enjoyable way for users to test and improve their Arabic language skills. Each feature has been carefully designed to contribute to an engaging and educational experience.
