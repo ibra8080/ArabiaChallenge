@@ -43,48 +43,91 @@ ArabiaChallenge combines the excitement of a quiz game with the educational bene
 
 ## UX
 
-🛑🛑🛑🛑🛑🛑🛑🛑🛑START OF NOTES (to be deleted)
+The design of ArabiaChallenge focuses on creating an intuitive, engaging, and educational experience for users. 
 
-In this section, you will briefly explain your design processes.
+### Interaction Design
 
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
+1. **Simplified Navigation**: The game interface is designed to be straightforward and easy to navigate. Users can quickly start a quiz, select their answers, and receive feedback without unnecessary steps or distractions.
+
+2. **Clear Instructions**: Each question comes with clear and concise instructions, ensuring that users understand how to interact with the quiz. The input process is streamlined to avoid confusion and maintain focus on learning.
+
+### Feedback Mechanism
+
+1. **Immediate Feedback**: Users receive instant feedback on their answers, helping them learn and correct mistakes in real-time. This reinforces learning and keeps users motivated.
+
+2. **Score Tracking**: The game includes a scoring system that tracks user progress and provides a sense of accomplishment. This feature encourages users to continue playing and improving their language skills.
+
+### Accessibility
+
+1. **Language Support**: The game supports both Arabic and English, making it accessible to users with different language backgrounds. This bilingual approach enhances usability and learning effectiveness.
+
+By following these design processes, ArabiaChallenge aims to provide a user-friendly and effective learning experience that caters to the diverse needs of its target audience.
 
 ## Features
 
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑 START OF NOTES (to be deleted)
-
-In this section, you should go over the different parts of your project,
-and describe each in a sentence or so.
-
-You will need to explain what value each of the features provides for the user,
-focusing on who this website is for, what it is that they want to achieve,
-and how your project is the best way to help them achieve these things.
-
-For some/all of your features, you may choose to reference the specific project files that implement them.
-
-IMPORTANT: Remember to always include a screenshot of each individual feature!
-
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
-
 ### Existing Features
 
-- **YOUR-TITLE-FOR-FEATURE-#1**
+ArabiaChallenge offers a variety of features designed to enhance the user's learning experience. Each feature provides unique value, making the game engaging and educational for users. Below are the key features of the project, with descriptions of their value and implementation.
 
-    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+- ### Welcome Message
 
-![screenshot](documentation/features/feature01.png)
+**Feature:** Welcome Message  
+**Description:** The game starts with a welcoming message to greet the user.  
+**Value:** Sets a friendly and inviting tone for the game, making users feel welcomed.  
+**Implementation:** Implemented in the `main` function with a simple print statement.
+![Welcome Message](screenshots/welcome_message.png)
 
-- **YOUR-TITLE-FOR-FEATURE-#2**
+- ### Question Presentation
 
-    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+**Feature:** Question Presentation  
+**Description:** Displays a question and multiple-choice answers to the user.  
+**Value:** Provides a clear and structured format for users to read and understand the question and possible answers.  
+**Implementation:** Implemented in the `get_question` function, which retrieves and prints the question and choices.
+![Question Presentation](screenshots/question_presentation.png)
 
-![screenshot](documentation/features/feature02.png)
+- ### Arabic Text Reshaping
 
-- **YOUR-TITLE-FOR-FEATURE-#3**
+**Feature:** Arabic Text Reshaping  
+**Description:** Corrects the display of Arabic text to be right-to-left and properly joined.  
+**Value:** Ensures that Arabic text is readable and properly formatted, enhancing the user experience for Arabic speakers.  
+**Implementation:** Utilizes the `arabic_reshaper` and `bidi.algorithm` libraries in the `reshape_text` function.
+![Arabic Text Reshaping](screenshots/arabic_text_reshaping.png)
 
-    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+- ### User Answer Input
 
-![screenshot](documentation/features/feature03.png)
+**Feature:** User Answer Input  
+**Description:** Prompts the user to enter their answer.  
+**Value:** Engages the user by allowing them to participate actively in the quiz.  
+**Implementation:** Implemented in the `request_answer` function, which ensures valid input through a loop and validation function.
+![User Answer Input](screenshots/user_answer_input.png)
+
+- ### Answer Validation
+
+**Feature:** Answer Validation  
+**Description:** Validates that the user's input is one of the acceptable answers (1, 2, 3, or 4).  
+**Value:** Prevents invalid inputs, ensuring that the game proceeds smoothly without errors.  
+**Implementation:** Implemented in the `validate_answer` function.
+![Answer Validation](screenshots/answer_validation.png)
+
+- ### Answer Comparison and Scoring
+
+**Feature:** Answer Comparison and Scoring  
+**Description:** Compares the user's answer to the correct answer, updates the score, and provides feedback.  
+**Value:** Gives immediate feedback, helping users learn from their mistakes and rewarding correct answers with score increments.  
+**Implementation:** Implemented in the `compare_answer` function, which adjusts the score and provides feedback.
+![Answer Comparison and Scoring](screenshots/answer_comparison_scoring.png)
+
+- ### Final Score Display
+
+**Feature:** Final Score Display  
+**Description:** Displays the user's final score after all questions have been answered.  
+**Value:** Provides a summary of the user's performance, giving a sense of achievement and areas for improvement.  
+**Implementation:** Implemented in the `final_score` function, which prints the final score.
+![Final Score Display](screenshots/final_score_display.png)
+
+#
+By combining these features, ArabiaChallenge provides a comprehensive and enjoyable way for users to test and improve their Arabic language skills. Each feature has been carefully designed to contribute to an engaging and educational experience.
+
 
 🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑 START OF NOTES (to be deleted)
 
