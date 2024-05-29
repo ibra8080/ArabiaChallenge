@@ -29,8 +29,8 @@ def request_answer():
     Request answer from input 
     """
     while True:
-        print('Please enter your answer.')
-        player_answer = input("Your answer: ").strip()
+        print('Please enter your answer. \n')
+        player_answer = input("Your answer: \n").strip()
 
         if validate_answer(player_answer):
             break
@@ -57,11 +57,11 @@ def compare_answer(player_answer, correct_answer, score):
     """
     if player_answer == correct_answer:
         score += 1
-        print("Correct !")
+        print("Correct ! \n")
             
     else:
-        print(f"Wrong. The correct answer is {correct_answer}.")
-    print(f"Your Score : {score}")
+        print(f"Wrong. The correct answer is {correct_answer}. \n")
+    print(f"Your Score : {score}. \n")
     return score
 
 
@@ -72,8 +72,11 @@ def compare_answer(player_answer, correct_answer, score):
 #     else:
 #         return 0
 def final_score(total_ques, score):
+    """
+    Print the final score after all questions are answered
+    """
     
-    print(f"Your final score : {score} out of {total_ques}")
+    print(f"Your final score :\n \n {score} out of {total_ques}. \n")
 
 
 def main():
