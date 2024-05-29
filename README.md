@@ -4,73 +4,42 @@
 [![GitHub last commit](https://img.shields.io/github/last-commit/ibra8080/ArabiaChallenge)](https://github.com/ibra8080/ArabiaChallenge/commits/main)
 [![GitHub repo size](https://img.shields.io/github/repo-size/ibra8080/ArabiaChallenge)](https://github.com/ibra8080/ArabiaChallenge)
 
-🛑🛑🛑🛑🛑🛑🛑🛑🛑START OF NOTES (to be deleted)
 
-!! IMPORTANT !! RE: Table of Contents
-
-DO NOT add a Table of Contents to your README or TESTING!!
-These are outdated since 2021 when GitHub added them built-in to Markdown files automatically.
-
-Assessors see this as bad practice since it's outdated for a few years now,
-as if you've taken it from someone else's project that did the same thing.
-
----
-
-In this section, you will include a few paragraphs providing an overview of your project.
-Essentially, this part is your "sales pitch".
-
-At this stage, you should have a name for your project so use it!
-Don't introduce the project as a "portfolio project" for the diploma.
-
-In this section, describe what the project hopes to accomplish, who it is intended to target, and how it will be useful to the target audience.
-
-Consider adding a mockup image using the "Am I Responsive" website.
-Here's your deployed site as an example:
-https://ui.dev/amiresponsive?url=https://arabiachallenge-4d32641e125b.herokuapp.com
-
-Screenshots for the README and testing should not be inside of `assets/` or `static/` image folders.
-(reminder: `assets/` and `static/` are for files used on the live site, not documentation)
-Consider adding a new folder called `documentation`, and add the amiresponsive screenshot inside of that folder.
-To add the image into your README, use this format:
-(assuming you have a new folder called `documentation` with an image called "mockup.png")
-
-![screenshot](documentation/mockup.png)
-
-Note: Markdown files (.md) should not contain HTML elements like `img`, `br`, `div`, `a`, etc, only Markdown formatting.
-Find out more about using Markdown elements here:
-https://pandao.github.io/editor.md/en.html
-
----
-
-GitHub now supports CALLOUTS in Markdown files.
-There are some callouts already embedded in this application for you.
-However, if you feel that you want to add more, there are certain ones you can use.
-
-NOTE: the preview for callouts isn't yet supported in Gitpod/Codeanywhere/VSCode/etc.
-You'll have to commit/push the changes to GitHub to see it in action.
-
-> [!NOTE]  
-> BLUE: Highlights information that users should take into account, even when skimming.
-
-> [!TIP]  
-> GREEN: Optional information to help a user be more successful.
-
-> [!IMPORTANT]  
-> PURPLE: Crucial information necessary for users to succeed.
-
-> [!WARNING]  
-> YELLOW: Critical content demanding immediate user attention due to potential risks.
-
-> [!CAUTION]  
-> RED: Negative potential consequences of an action.
-
-Source: https://github.com/orgs/community/discussions/16925
-
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
 
 ![screenshot](documentation/mockup.png)
 
 source: [amiresponsive](https://ui.dev/amiresponsive?url=https://arabiachallenge-4d32641e125b.herokuapp.com)
+## Introduction
+
+**ArabiaChallenge** is an engaging and educational quiz game designed to help users test and enhance their knowledge of the Arabic language. The project aims to provide a fun and interactive way for individuals to learn Arabic vocabulary and phrases, making language learning more accessible and enjoyable.
+
+## Objectives
+
+The primary objective of ArabiaChallenge is to:
+
+- **Promote Language Learning**: By offering a quiz format, the project encourages users to recall and apply their knowledge of Arabic in a practical manner.
+- **Enhance Vocabulary**: Each question is designed to introduce and reinforce essential Arabic words and phrases.
+- **Provide Instant Feedback**: Users receive immediate feedback on their answers, allowing them to learn from their mistakes and understand the correct usage of words.
+
+## Target Audience
+
+ArabiaChallenge is intended for:
+
+- **Language Learners**: Individuals who are beginning to learn Arabic or want to expand their vocabulary in an interactive way.
+- **Educators and Students**: Teachers can use the game as a supplementary tool in classrooms, and students can use it for self-study.
+- **Travelers and Expats**: People who are planning to visit or live in Arabic-speaking countries and want to learn basic conversational Arabic.
+- **Language Enthusiasts**: Anyone with an interest in learning new languages and cultures.
+
+## Usefulness
+
+ArabiaChallenge is useful to its target audience in several ways:
+
+- **Interactive Learning**: The quiz format keeps users engaged and motivated to learn more.
+- **Self-paced**: Users can play the game at their own pace, allowing for flexible learning schedules.
+- **Immediate Feedback**: Correct and incorrect answers are immediately identified, helping users to quickly grasp the correct terms and phrases.
+- **Cultural Insight**: By learning the language, users gain insights into Arabic-speaking cultures, which can enhance their travel experiences and cultural understanding.
+
+ArabiaChallenge combines the excitement of a quiz game with the educational benefits of language learning, making it a valuable tool for anyone looking to improve their Arabic skills in an enjoyable and effective manner.
 
 ## UX
 
