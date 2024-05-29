@@ -323,11 +323,7 @@ You can fork this repository by using the following steps:
 
 ### Local VS Deployment
 
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-START  (to be deleted)
-
-Use this space to discuss any differences between the local version you've developed, and the live deployment site on Heroku.
-
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
+There are no differences between the local version developed and the live deployment site on Heroku.
 
 ## Credits
 
