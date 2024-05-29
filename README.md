@@ -327,13 +327,22 @@ There are no differences between the local version developed and the live deploy
 
 ## Credits
 
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-START OF NOTES (to be deleted)
+## Credits
 
-In this section you need to reference where you got your content, media, and extra help from.
-It is common practice to use code from other repositories and tutorials,
-however, it is important to be very specific about these sources to avoid plagiarism.
+### Libraries and Tools
+- [arabic_reshaper](https://github.com/mpcabd/python-arabic-reshaper) - Used for reshaping Arabic text.
+- [python-bidi](https://github.com/MeirKriheli/python-bidi) - Used for displaying bidirectional text.
 
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
+### Contributors
+- [Ibrahim Abusaif](https://github.com/ibra8080) - Initial development.
+
+### Acknowledgements
+- I would like to thank my Code Institute mentor, [Tim Nelson](https://github.com/ibra8080/pyramidexplorer/blob/main/README.md) for his support throughout the development of this project.
+- I would like to thank the [Code Institute](https://codeinstitute.net/de/) tutor team for their assistance.
+- I would like to thank the [Code Institute Slack community](https://app.slack.com/client/T0L30B202/C06SRSQFFK3) for the moral support; it kept me going during periods of self doubt.
+- Assistance provided by [OpenAI's ChatGPT](https://www.openai.com/chatgpt) for code debugging and documentation.
+
+
 
 ### Content
 
