@@ -83,19 +83,39 @@ def final_score(total_ques, score):
     print(f"Your final score :\n {Back.GREEN}{Style.BRIGHT}{score} out of {total_ques}. \n")
 
 
+def asking_replay():
+    """
+    asking the player for replay or to end the game
+    """
+    while True:
+        replay = input("Do you want to play again? (yes/no): ").strip().lower()
+        if replay in ['yes', 'no']:
+            return replay
+        else:
+            print(Fore.RED + "Invalid input. Please enter 'yes' or 'no'.")
+
+
 def main():
     """
     Run all programm functions
     """
-    score = 0
-    random.shuffle(questions)
 
-    for i in range(len(questions)):
-        question_data = get_question(i)
-        player_answer = request_answer()
-        score = compare_answer(player_answer, question_data["answer"], score)
+    while True:
+        score = 0
+        random.shuffle(questions)
 
-    final_score(len(questions), score)
+        for i in range(len(questions)):
+            question_data = get_question(i)
+            player_answer = request_answer()
+            score = compare_answer(player_answer, question_data["answer"], score)
+
+        final_score(len(questions), score)
+
+        if asking_replay() == "no":
+            print(Fore.YELLOW + "Thank you for playing. Goodbye!")
+            break
+
+
 
 
 if __name__ == "__main__":
