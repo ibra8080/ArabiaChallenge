@@ -1,7 +1,15 @@
+import os
+import random
 from questions import questions
 import arabic_reshaper
 from bidi.algorithm import get_display
-print("Welcom in ArabiaChallenge \n")
+
+
+def clear():
+    """
+    Clear function to clean-up the terminal so things don't get messy.
+    """
+    os.system("cls" if os.name == "nt" else "clear")
 
 
 def reshape_text(text):
@@ -55,6 +63,7 @@ def compare_answer(player_answer, correct_answer, score):
     Print massage with correct answer if it wrong.
     Increase score if it right.
     """
+    clear()
     if player_answer == correct_answer:
         score += 1
         print("Correct ! \n")
@@ -65,12 +74,6 @@ def compare_answer(player_answer, correct_answer, score):
     return score
 
 
-# def score_collector(compare_answer, score):
-#     if True:
-#         return 1
-#         print(f"Your Score : {score}")
-#     else:
-#         return 0
 def final_score(total_ques, score):
     """
     Print the final score after all questions are answered
@@ -83,15 +86,17 @@ def main():
     Run all programm functions
     """
     score = 0
+    random.shuffle(questions)
 
     for i in range(len(questions)):
         question_data = get_question(i)
         player_answer = request_answer()
         score = compare_answer(player_answer, question_data["answer"], score)
-        # score_collector(compare_answer, score)
-        # score = score_collector(compare_answer, score)
 
     final_score(len(questions), score)
 
 
-main()
+if __name__ == "__main__":
+    clear()
+    print("Welcome in ArabiaChallenge \n")
+    main()
