@@ -200,10 +200,10 @@ The ArabiaChallenge project uses various functions to modularize the code, ensur
     - Converts all string values into integers.
 - `compare_answer(player_answer, correct_answer, score)`
   - Compares the user's answer with the correct answer, updates the score, and provides feedback on the user's answer.
-
 - `final_score(total_ques, score)`
   - Displays the user's final score after all questions have been answered.
-
+- `clear()`
+  - Clear function to clean-up the terminal so things don't get messy.
 - `main()`
   - Runs the main loop of the quiz, calling other functions to display questions, collect answers, and track the score.
 
@@ -212,6 +212,7 @@ The ArabiaChallenge project uses various functions to modularize the code, ensur
 I've used the following Python packages and/or external imported packages.
 
 - `os`: used for adding a `clear()` function
+- `random` : used for shuffling the questions list
 
 ## Testing
 
