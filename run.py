@@ -54,7 +54,9 @@ def validate_answer(player_answer):
     """
     valid_answers = ['1', '2', '3', '4']
     if player_answer not in valid_answers:
-        print(Fore.RED + f"{player_answer} is invalid . Please enter 1, 2, 3, or 4.")
+        print(
+            Fore.RED 
+            + f"{player_answer} is invalid. Please enter 1, 2, 3, or 4.")
         return False
     return True
 
@@ -80,7 +82,9 @@ def final_score(total_ques, score):
     """
     Print the final score after all questions are answered
     """
-    print(f"Your final score :\n {Back.GREEN}{Style.BRIGHT}{score} out of {total_ques}. \n")
+    print(
+        f"Your final score :\n{Back.GREEN}{Style.
+        BRIGHT}{score} out of {total_ques}. \n")
 
 
 def asking_replay():
@@ -107,7 +111,8 @@ def main():
         for i in range(len(questions)):
             question_data = get_question(i)
             player_answer = request_answer()
-            score = compare_answer(player_answer, question_data["answer"], score)
+            score = compare_answer(
+                player_answer, question_data["answer"], score)
 
         final_score(len(questions), score)
 
