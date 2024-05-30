@@ -30,7 +30,7 @@ def get_question(ques_num):
     question_data = questions[ques_num]
     print(reshape_text(question_data["question"]))  # Apply reshap_text
     for choice in question_data["choices"]:
-        print(reshape_text(choice))   # Apply reshap_text with choice
+        print(Fore.LIGHTCYAN_EX + reshape_text(choice))   # Apply reshap_text with choice
     return question_data
 
 
@@ -54,7 +54,7 @@ def validate_answer(player_answer):
     """
     valid_answers = ['1', '2', '3', '4']
     if player_answer not in valid_answers:
-        print(f"{player_answer} is invalid . Please enter 1, 2, 3, or 4.")
+        print(Fore.RED + f"{player_answer} is invalid . Please enter 1, 2, 3, or 4.")
         return False
     return True
 
@@ -68,10 +68,10 @@ def compare_answer(player_answer, correct_answer, score):
     clear()
     if player_answer == correct_answer:
         score += 1
-        print("Correct ! \n")
+        print(Fore.GREEN + "Correct ! \n")
 
     else:
-        print(f"Wrong. The correct answer is {correct_answer}. \n")
+        print(Fore.MAGENTA + f"Wrong. The correct answer is {correct_answer}. \n")
     print(f"Your Score : {score}. \n")
     return score
 
@@ -80,7 +80,7 @@ def final_score(total_ques, score):
     """
     Print the final score after all questions are answered
     """
-    print(f"Your final score :\n \n {score} out of {total_ques}. \n")
+    print(f"Your final score :\n {Back.GREEN}{Style.BRIGHT}{score} out of {total_ques}. \n")
 
 
 def main():
@@ -101,5 +101,5 @@ def main():
 if __name__ == "__main__":
     clear()
     colorama.init(autoreset=True)
-    print(Fore.RED + "Welcome in ArabiaChallenge \n")
+    print(Fore.YELLOW + "Welcome in ArabiaChallenge \n")
     main()
