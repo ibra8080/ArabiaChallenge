@@ -30,7 +30,7 @@ def get_question(ques_num):
     question_data = questions[ques_num]
     print(reshape_text(question_data["question"]))  # Apply reshap_text
     for choice in question_data["choices"]:
-        print(Fore.LIGHTCYAN_EX + reshape_text(choice))   # Apply reshap_text with choice
+        print(reshape_text(choice))   # Apply reshap_text with choice
     return question_data
 
 
@@ -71,7 +71,7 @@ def compare_answer(player_answer, correct_answer, score):
         print(Fore.GREEN + "Correct ! \n")
 
     else:
-        print(Fore.MAGENTA + f"Wrong. The correct answer is {correct_answer}. \n")
+        print(Fore.BLUE + f"Wrong. The correct answer is {correct_answer}. \n")
     print(f"Your Score : {score}. \n")
     return score
 
