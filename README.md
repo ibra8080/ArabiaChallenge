@@ -204,6 +204,8 @@ The ArabiaChallenge project uses various functions to modularize the code, ensur
   - Displays the user's final score after all questions have been answered.
 - `clear()`
   - Clear function to clean-up the terminal so things don't get messy.
+- `asking_replay()`
+  - Asking the player for replay or to end the game.
 - `main()`
   - Runs the main loop of the quiz, calling other functions to display questions, collect answers, and track the score.
 
@@ -211,9 +213,13 @@ The ArabiaChallenge project uses various functions to modularize the code, ensur
 
 I've used the following Python packages and/or external imported packages.
 
-- `os`: used for adding a `clear()` function
-- `random` : used for shuffling the questions list
 
+- `os`: Used for system-specific operations and clearing the terminal.
+- `random`: Utilized for shuffling the questions list to present them in a random order.
+- `colorama`: Enables cross-platform support for styling text in the terminal, enhancing the visual presentation of the game.
+- `questions`: Imports the questions data structure from the questions module, which contains the list of questions, choices, and correct answers.
+- `arabic_reshaper`: Utilized for reshaping Arabic text to ensure proper display from right to left.
+- `bidi.algorithm`: Enables bidirectional text rendering for Arabic text to ensure correct visualization.
 ## Testing
 
 > [!NOTE]  
