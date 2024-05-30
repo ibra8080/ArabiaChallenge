@@ -211,7 +211,6 @@ The ArabiaChallenge project uses various functions to modularize the code, ensur
 
 I've used the following Python packages and/or external imported packages.
 
-- `gspread`: used with the Google Sheets API
 - `os`: used for adding a `clear()` function
 
 ## Testing
