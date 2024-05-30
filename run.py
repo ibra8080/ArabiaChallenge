@@ -58,7 +58,7 @@ def compare_answer(player_answer, correct_answer, score):
     if player_answer == correct_answer:
         score += 1
         print("Correct ! \n")
-            
+
     else:
         print(f"Wrong. The correct answer is {correct_answer}. \n")
     print(f"Your Score : {score}. \n")
@@ -68,14 +68,13 @@ def compare_answer(player_answer, correct_answer, score):
 # def score_collector(compare_answer, score):
 #     if True:
 #         return 1
-#         print(f"Your Score : {score}")   
+#         print(f"Your Score : {score}")
 #     else:
 #         return 0
 def final_score(total_ques, score):
     """
     Print the final score after all questions are answered
     """
-    
     print(f"Your final score :\n \n {score} out of {total_ques}. \n")
 
 
@@ -86,15 +85,13 @@ def main():
     score = 0
 
     for i in range(len(questions)):
-        question_data = get_question(i)  
+        question_data = get_question(i)
         player_answer = request_answer()
         score = compare_answer(player_answer, question_data["answer"], score)
         # score_collector(compare_answer, score)
         # score = score_collector(compare_answer, score)
-    
-    final_score(len(questions), score)
-        
 
-        
+    final_score(len(questions), score)
+
 
 main()
