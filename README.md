@@ -376,4 +376,6 @@ There are no differences between the local version developed and the live deploy
 | --- | --- | --- |
 | [Markdown Builder](https://tim.2bn.dev/markdown-builder) | README and TESTING | tool to help generate the Markdown files |
 | [Real python](https://realpython.com/python-quiz-application/) | entire site | Build a Quiz Application With Python |
+| [TechWithTim](https://www.youtube.com/watch?v=u51Zjlnui4Y) | entire site | using `colorama()`  to print Colored Text in Python |
+
 
