@@ -1,5 +1,7 @@
 import os
 import random
+import colorama
+from colorama import Fore, Back, Style
 from questions import questions
 import arabic_reshaper
 from bidi.algorithm import get_display
@@ -98,5 +100,6 @@ def main():
 
 if __name__ == "__main__":
     clear()
-    print("Welcome in ArabiaChallenge \n")
+    colorama.init(autoreset=True)
+    print(Fore.RED + "Welcome in ArabiaChallenge \n")
     main()
