@@ -328,7 +328,8 @@ There are no differences between the local version developed and the live deploy
 
 ### Libraries and Tools
 - [arabic_reshaper](https://github.com/mpcabd/python-arabic-reshaper) - Used for reshaping Arabic text.
-- [python-bidi](https://github.com/MeirKriheli/python-bidi) - Used for displaying bidirectional text.
+- [python-bidi](https://github.com/MeirKriheli/python-bidi): Utilized for displaying bidirectional text, enhancing readability for Arabic speakers.
+- [colorama](https://pypi.org/project/colorama/): Employed for cross-platform colored terminal text, enhancing the visual appeal of the application.
 
 ### Contributors
 - [Ibrahim Abusaif](https://github.com/ibra8080) - Initial development.
