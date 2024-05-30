@@ -55,7 +55,7 @@ def validate_answer(player_answer):
     valid_answers = ['1', '2', '3', '4']
     if player_answer not in valid_answers:
         print(
-            Fore.RED 
+            Fore.RED
             + f"{player_answer} is invalid. Please enter 1, 2, 3, or 4.")
         return False
     return True
@@ -83,8 +83,8 @@ def final_score(total_ques, score):
     Print the final score after all questions are answered
     """
     print(
-        f"Your final score :\n{Back.GREEN}{Style.
-        BRIGHT}{score} out of {total_ques}. \n")
+        f"Your final score :\n"
+        f"{Back.GREEN}{Style.BRIGHT}{score} out of {total_ques}.\n")
 
 
 def asking_replay():
@@ -119,8 +119,6 @@ def main():
         if asking_replay() == "no":
             print(Fore.YELLOW + "Thank you for playing. Goodbye!")
             break
-
-
 
 
 if __name__ == "__main__":
