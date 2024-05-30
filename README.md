@@ -85,6 +85,15 @@ ArabiaChallenge offers a variety of features designed to enhance the user's lear
 **Implementation:** Implemented in the `get_question` function, which retrieves and prints the question and choices.
 ![Question Presentation](documentation/question_presentation.png)
 
+- Clear Function
+
+**Feature:** Clear Function  
+**Description:** Clears the terminal to maintain a clean user interface.  
+**Value:** Enhances the visual presentation of the game and prevents clutter in the terminal.  
+**Implementation:** Implemented in the `clear` function using system-specific commands.
+![Clear Function](documentation/clear_function.png)
+
+
 - Arabic Text Reshaping
 
 **Feature:** Arabic Text Reshaping  
@@ -92,6 +101,15 @@ ArabiaChallenge offers a variety of features designed to enhance the user's lear
 **Value:** Ensures that Arabic text is readable and properly formatted, enhancing the user experience for Arabic speakers.  
 **Implementation:** Utilizes the `arabic_reshaper` and `bidi.algorithm` libraries in the `reshape_text` function.
 ![Arabic Text Reshaping](documentation/arabic_text_reshaping.png)
+
+- Colorama Integration
+
+**Feature:** Colorama Integration  
+**Description:** Utilizes the Colorama library to add color to terminal output, enhancing visual appeal and readability.  
+**Value:** Improves user experience by providing colorful and visually appealing text in the terminal interface.  
+**Implementation:** Integrated Colorama library for text coloring throughout the game interface.
+![Colorama Integration](documentation/colorama_Integration.png)
+
 
 - User Answer Input
 
@@ -124,6 +142,16 @@ ArabiaChallenge offers a variety of features designed to enhance the user's lear
 **Value:** Provides a summary of the user's performance, giving a sense of achievement and areas for improvement.  
 **Implementation:** Implemented in the `final_score` function, which prints the final score.
 ![Final Score Display](documentation/final_score_display.png)
+
+- Asking_replay
+
+**Feature:** Replay Function  
+**Description:** Allows the user to replay the game after completing it.  
+**Value:** Offers users the option to continue engaging with the game and improve their performance.  
+**Implementation:** Implemented in the `asking_replay` function, which prompts the user to play again or end the game.
+![Asking_replay](documentation/asking_replay.png)
+
+
 
 ---
 By combining these features, ArabiaChallenge provides a comprehensive and enjoyable way for users to test and improve their Arabic language skills. Each feature has been carefully designed to contribute to an engaging and educational experience.
@@ -330,6 +358,7 @@ There are no differences between the local version developed and the live deploy
 - [arabic_reshaper](https://github.com/mpcabd/python-arabic-reshaper) - Used for reshaping Arabic text.
 - [python-bidi](https://github.com/MeirKriheli/python-bidi): Utilized for displaying bidirectional text, enhancing readability for Arabic speakers.
 - [colorama](https://pypi.org/project/colorama/): Employed for cross-platform colored terminal text, enhancing the visual appeal of the application.
+- [random](https://docs.python.org/3/library/random.html): Utilized for shuffling the questions list, providing variety in question order for the user.
 
 ### Contributors
 - [Ibrahim Abusaif](https://github.com/ibra8080) - Initial development.
