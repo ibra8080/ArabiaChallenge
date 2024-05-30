@@ -52,7 +52,7 @@ def validate_answer(player_answer):
     """
     valid_answers = ['1', '2', '3', '4']
     if player_answer not in valid_answers:
-        print("Invalid input. Please enter 1, 2, 3, or 4.")
+        print(f"{player_answer} is invalid . Please enter 1, 2, 3, or 4.")
         return False
     return True
 
