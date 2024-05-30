@@ -41,12 +41,16 @@ questions = [
     },
     {
         "question": "How do you say 'good morning' in Arabic?",
-        "choices": ["1. مساء الخير", "2. صباح الخير", "3. تصبح على خير", "4. مع السلامة"],
+        "choices": [
+            "1. مساء الخير", "2. صباح الخير", "3. تصبح على خير",
+            "4. مع السلامة"],
         "answer": "2"
     },
     {
         "question": "What is the meaning of 'مساء الخير'?",
-        "choices": ["1. Good morning", "2. Good night", "3. Good evening", "4. Goodbye"],
+        "choices": [
+            "1. Good morning", "2. Good night", "3. Good evening",
+            "4. Goodbye"],
         "answer": "3"
     }
 ]
