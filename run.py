@@ -1,12 +1,12 @@
-print("Welcom in ArabiaChallenge \n")
 from questions import questions
 import arabic_reshaper
 from bidi.algorithm import get_display
+print("Welcom in ArabiaChallenge \n")
 
 
 def reshape_text(text):
     """
-    Correct Arabic typo from right to left 
+    Correct Arabic typo from right to left
     """
     reshaped_text = arabic_reshaper.reshape(text)
     bidi_text = get_display(reshaped_text)
@@ -17,16 +17,16 @@ def get_question(ques_num):
     """
     Get Question from questions sheet
     """
-    question_data = questions[ques_num]  
-    print(reshape_text(question_data["question"])) # Apply reshap_text with quistion
+    question_data = questions[ques_num]
+    print(reshape_text(question_data["question"]))  # Apply reshap_text
     for choice in question_data["choices"]:
-        print(reshape_text(choice))  # Apply reshap_text with choice
+        print(reshape_text(choice))   # Apply reshap_text with choice
     return question_data
 
 
 def request_answer():
     """
-    Request answer from input 
+    Request answer from input
     """
     while True:
         print('Please enter your answer. \n')
@@ -40,7 +40,7 @@ def request_answer():
 def validate_answer(player_answer):
     """
     Validate answers, If the input answer not in 1, 2, 3 or 4 rise
-    Invalid input error 
+    Invalid input error
     """
     valid_answers = ['1', '2', '3', '4']
     if player_answer not in valid_answers:
@@ -51,9 +51,9 @@ def validate_answer(player_answer):
 
 def compare_answer(player_answer, correct_answer, score):
     """
-    Compare user answer with right answer, 
+    Compare user answer with right answer,
     Print massage with correct answer if it wrong.
-    Increase score if it right, 
+    Increase score if it right.
     """
     if player_answer == correct_answer:
         score += 1
