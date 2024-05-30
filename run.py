@@ -71,7 +71,7 @@ def compare_answer(player_answer, correct_answer, score):
         print(Fore.GREEN + "Correct ! \n")
 
     else:
-        print(Fore.BLUE + f"Wrong. The correct answer is {correct_answer}. \n")
+        print(Fore.CYAN + f"Wrong. The correct answer is {correct_answer}. \n")
     print(f"Your Score : {score}. \n")
     return score
 
