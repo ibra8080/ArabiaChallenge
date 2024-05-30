@@ -200,6 +200,8 @@ The ArabiaChallenge project uses various functions to modularize the code, ensur
   - Corrects the display of Arabic text to ensure it appears right-to-left and properly shaped.
 - `get_question(ques_num)`
     - Retrieves and displays a question and its choices from the list of questions.
+- `request_answer()`
+    - Request answer from input and calls the validate_data function.
 - `validate_data()`
     - Converts all string values into integers.
 - `compare_answer(player_answer, correct_answer, score)`
