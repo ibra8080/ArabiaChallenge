@@ -69,7 +69,7 @@ By following these design processes, ArabiaChallenge aims to provide a user-frie
 
 ArabiaChallenge offers a variety of features designed to enhance the user's learning experience. Each feature provides unique value, making the game engaging and educational for users. Below are the key features of the project, with descriptions of their value and implementation.
 
-- ### Welcome Message
+- Welcome Message
 
 **Feature:** Welcome Message  
 **Description:** The game starts with a welcoming message to greet the user.  
@@ -78,7 +78,7 @@ ArabiaChallenge offers a variety of features designed to enhance the user's lear
 ![Welcome Message](![Final Score Display](documentation/final_score_display.png)
 /welcome_message.png)
 
-- ### Question Presentation
+- Question Presentation
 
 **Feature:** Question Presentation  
 **Description:** Displays a question and multiple-choice answers to the user.  
@@ -87,7 +87,7 @@ ArabiaChallenge offers a variety of features designed to enhance the user's lear
 ![Question Presentation](![Final Score Display](documentation/final_score_display.png)
 /question_presentation.png)
 
-- ### Arabic Text Reshaping
+- Arabic Text Reshaping
 
 **Feature:** Arabic Text Reshaping  
 **Description:** Corrects the display of Arabic text to be right-to-left and properly joined.  
@@ -96,7 +96,7 @@ ArabiaChallenge offers a variety of features designed to enhance the user's lear
 ![Arabic Text Reshaping](![Final Score Display](documentation/final_score_display.png)
 /arabic_text_reshaping.png)
 
-- ### User Answer Input
+- User Answer Input
 
 **Feature:** User Answer Input  
 **Description:** Prompts the user to enter their answer.  
@@ -105,7 +105,7 @@ ArabiaChallenge offers a variety of features designed to enhance the user's lear
 ![User Answer Input](![Final Score Display](documentation/final_score_display.png)
 /user_answer_input.png)
 
-- ### Answer Validation
+- Answer Validation
 
 **Feature:** Answer Validation  
 **Description:** Validates that the user's input is one of the acceptable answers (1, 2, 3, or 4).  
@@ -114,7 +114,7 @@ ArabiaChallenge offers a variety of features designed to enhance the user's lear
 ![Answer Validation](![Final Score Display](documentation/final_score_display.png)
 /answer_validation.png)
 
-- ### Answer Comparison and Scoring
+- Answer Comparison and Scoring
 
 **Feature:** Answer Comparison and Scoring  
 **Description:** Compares the user's answer to the correct answer, updates the score, and provides feedback.  
@@ -123,7 +123,7 @@ ArabiaChallenge offers a variety of features designed to enhance the user's lear
 ![Answer Comparison and Scoring](![Final Score Display](documentation/final_score_display.png)
 /answer_comparison_scoring.png)
 
-- ### Final Score Display
+- Final Score Display
 
 **Feature:** Final Score Display  
 **Description:** Displays the user's final score after all questions have been answered.  
@@ -131,7 +131,7 @@ ArabiaChallenge offers a variety of features designed to enhance the user's lear
 **Implementation:** Implemented in the `final_score` function, which prints the final score.
 ![Final Score Display](documentation/final_score_display.png)
 
-#
+---
 By combining these features, ArabiaChallenge provides a comprehensive and enjoyable way for users to test and improve their Arabic language skills. Each feature has been carefully designed to contribute to an engaging and educational experience.
 
 
@@ -139,28 +139,28 @@ By combining these features, ArabiaChallenge provides a comprehensive and enjoya
 
 To further enhance the ArabiaChallenge experience, several future features are planned. These features aim to improve user engagement, provide additional learning resources, and create a more interactive and personalized experience.
 
-### 1. Leaderboard
+ 1. Leaderboard
 
 **Feature:** Leaderboard  
 **Description:** Implement a leaderboard to display the top scores of users.  
 **Value:** Encourages healthy competition among users, motivating them to improve their scores and engage more frequently with the quiz.  
 **Implementation Plan:** Store user scores in a database and display the top scores on a leaderboard page. This feature will require user authentication to track individual progress.
 
-### 2. Multiple Difficulty Levels
+ 2. Multiple Difficulty Levels
 
 **Feature:** Multiple Difficulty Levels  
 **Description:** Introduce different difficulty levels (e.g., beginner, intermediate, advanced) for the quiz questions.  
 **Value:** Provides a tailored learning experience for users of varying proficiency levels, making the game more accessible and challenging for all users.  
 **Implementation Plan:** Categorize questions by difficulty level and allow users to select their preferred level before starting the quiz.
 
-### 3. Timed Challenges
+ 3. Timed Challenges
 
 **Feature:** Timed Challenges  
 **Description:** Add a timed challenge mode where users must answer questions within a certain time limit.  
 **Value:** Adds an element of urgency and excitement, enhancing the quiz's challenge and testing users' quick thinking and recall abilities.  
 **Implementation Plan:** Implement a countdown timer for each question and adjust the scoring system to reward quick and correct answers.
 
-### 4. Detailed Explanations
+ 4. Detailed Explanations
 
 **Feature:** Detailed Explanations  
 **Description:** Provide detailed explanations for each answer after the user responds.  
@@ -178,7 +178,6 @@ These future features aim to make ArabiaChallenge more engaging, educational, an
 - [![Gitpod](https://img.shields.io/badge/Gitpod-grey?logo=gitpod&logoColor=FFAE33)](https://gitpod.io) used as a cloud-based IDE for development.
 - [![Python](https://img.shields.io/badge/Python-grey?logo=python&logoColor=3776AB)](https://www.python.org) used as the back-end programming language.
 - [![Heroku](https://img.shields.io/badge/Heroku-grey?logo=heroku&logoColor=430098)](https://www.heroku.com) used for hosting the deployed back-end site.
-- [![WhiteNoise](https://img.shields.io/badge/WhiteNoise-grey?logo=python&logoColor=FFFFFF)](https://whitenoise.readthedocs.io) used for serving static files with Heroku.
 - [![ChatGPT](https://img.shields.io/badge/ChatGPT-grey?logo=chromatic&logoColor=75A99C)](https://chat.openai.com) used to help debug, troubleshoot, and explain things.
 
 ## Data Model
