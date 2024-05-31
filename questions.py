@@ -53,4 +53,54 @@ questions = [
             "4. Goodbye"],
         "answer": "3"
     }
+    {
+        "question": "What is the Arabic word for 'cat'?",
+        "choices": ["1. كلب", "2. فأر", "3. طائر", "4. قطة"],
+        "answer": "4"
+    },
+    {
+        "question": "How do you say 'apple' in Arabic?",
+        "choices": ["1. برتقال", "2. تفاحة", "3. موزة", "4. فراولة"],
+        "answer": "2"
+    },
+    {
+        "question": "What is the Arabic word for 'red'?",
+        "choices": ["1. أزرق", "2. أخضر", "3. أحمر", "4. أصفر"],
+        "answer": "3"
+    },
+    {
+        "question": "How do you say 'mother' in Arabic?",
+        "choices": ["1. أب", "2. أخت", "3. أم", "4. جدة"],
+        "answer": "3"
+    },
+    {
+        "question": "What is the Arabic word for 'computer'?",
+        "choices": ["1. جريدة", "2. كتاب", "3. تلفاز", "4. حاسوب"],
+        "answer": "4"
+    },
+    {
+        "question": "How do you say 'school' in Arabic?",
+        "choices": ["1. مستشفى", "2. جامعة", "3. مكتبة", "4. مدرسة"],
+        "answer": "4"
+    },
+    {
+        "question": "What is the Arabic word for 'big'?",
+        "choices": ["1. صغير", "2. طويل", "3. كبير", "4. ضخم"],
+        "answer": "3"
+    },
+    {
+        "question": "How do you say 'father' in Arabic?",
+        "choices": ["1. جد", "2. عم", "3. أب", "4. ابن"],
+        "answer": "3"
+    },
+    {
+        "question": "What is the Arabic word for 'tree'?",
+        "choices": ["1. سماء", "2. بحر", "3. جبل", "4. شجرة"],
+        "answer": "4"
+    },
+    {
+        "question": "How do you say 'beautiful' in Arabic?",
+        "choices": ["1. قبيح", "2. جميل", "3. عادي", "4. فظيع"],
+        "answer": "2"
+    }
 ]
