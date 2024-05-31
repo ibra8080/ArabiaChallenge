@@ -50,148 +50,51 @@ Defensive programming was manually tested with the below user acceptance testing
 | Function | Expectation | Test| Result | Fix | Screenshot |
 |----|----|----|----|----|----|
 | `request_answer` | Users must enter a valid answer (1, 2, 3, or 4) | Entered a valid answer (e.g., '2')   | Answer accepted and validated as expected | Test concluded and passed | ![screenshot](documentation/validation/defensive/valid_answer.png)  |
-|.  | Users cannot submit an empty answer                                                             | Pressed Enter without typing         | Error message displayed and prompted for input again           | Test concluded and passed            | ![screenshot](documentation/validation/defensive/without_type.png)   |
+|  | Users cannot submit an empty answer                                                             | Pressed Enter without typing         | Error message displayed and prompted for input again | Test concluded and passed | ![screenshot](documentation/validation/defensive/without_type.png)   |
 | `validate_answer`| Answers must be validated to ensure they are within the specific list (1, 2, 3, or 4)| Entered a valid answer (e.g., '2')   | Validation successful| Test concluded and passed | ![screenshot](documentation/validation/defensive/valid_answer.png)  | 
-|   | Entered an invalid answer (e.g., 'sfs')| Error message displayed | Test concluded and passed | ![screenshot](documentation/validation/defensive/sfs.png)|
+|   | | Entered an invalid answer (e.g., 'sfs')| Error message displayed | Test concluded and passed | ![screenshot](documentation/validation/defensive/sfs.png)|
 | `asking_replay`  | Users must choose from a specific list only ('yes' or 'no')                                      | Entered 'yes' | Game restarted as expected | Test concluded and passed | ![screenshot](documentation/validation/defensive/yes.png) |
 |  |  | Entered 'no' | Game ended as expected | Test concluded and passed | ![screenshot](documentation/validation/defensive/no.png) |
-| | Users cannot submit an invalid answer for replay prompt                                         | Entered an invalid answer (e.g., 'maybe') | Error message displayed and prompted for input again  | Test concluded and passed | ![screenshot](documentation/features/asking_replay_invalid.png) |
+| | Users cannot submit an invalid answer for replay prompt                                         | Entered an invalid answer (e.g., 'maybe') | Error message displayed and prompted for input again  | Test concluded and passed | ![screenshot](documentation/validation/defensive/maybe.png) |
 
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-START OF NOTES (to be deleted)
-
-Another way of performing defensive testing is a simple Pass/Fail for each test.
-The assessors prefer the above method, with the full test explained, but this is also acceptable in most cases.
-
-When in doubt, use the above method instead, and delete the table below.
-
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
-
-| Page | User Action | Expected Result | Pass/Fail | Comments |
-| --- | --- | --- | --- | --- |
-| Home | | | | |
-| | Click on Logo | Redirection to Home page | Pass | |
-| | Click on Home link in navbar | Redirection to Home page | Pass | |
-| Gallery | | | | |
-| | Click on Gallery link in navbar | Redirection to Gallery page | Pass | |
-| | Load gallery images | All images load as expected | Pass | |
-| Contact | | | | |
-| | Click on Contact link in navbar | Redirection to Contact page | Pass | |
-| | Enter first/last name | Field will accept freeform text | Pass | |
-| | Enter valid email address | Field will only accept email address format | Pass | |
-| | Enter message in textarea | Field will accept freeform text | Pass | |
-| | Click the Submit button | Redirects user to form-dump | Pass | User must click 'Back' button to return |
-| Sign Up | | | | |
-| | Click on Sign Up button | Redirection to Sign Up page | Pass | |
-| | Enter valid email address | Field will only accept email address format | Pass | |
-| | Enter valid password (twice) | Field will only accept password format | Pass | |
-| | Click on Sign Up button | Asks user to confirm email page | Pass | Email sent to user |
-| | Confirm email | Redirects user to blank Sign In page | Pass | |
-| Log In | | | | |
-| | Click on the Login link | Redirection to Login page | Pass | |
-| | Enter valid email address | Field will only accept email address format | Pass | |
-| | Enter valid password | Field will only accept password format | Pass | |
-| | Click Login button | Redirects user to home page | Pass | |
-| Log Out | | | | |
-| | Click Logout button | Redirects user to logout page | Pass | Confirms logout first |
-| | Click Confirm Logout button | Redirects user to home page | Pass | |
-| Profile | | | | |
-| | Click on Profile button | User will be redirected to the Profile page | Pass | |
-| | Click on the Edit button | User will be redirected to the edit profile page | Pass | |
-| | Click on the My Orders link | User will be redirected to the My Orders page | Pass | |
-| | Brute forcing the URL to get to another user's profile | User should be given an error | Pass | Redirects user back to own profile |
-| repeat for all remaining pages | x | x | x | x |
-
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-START OF NOTES (to be deleted)
-
-Repeat for all other tests, as applicable to your own site.
-The aforementioned tests are just an example of a few different project scenarios.
-
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
 
 ## Bugs
+- Python repeatedly displays "Invalid input. Please enter 1, 2, 3, or 4." when user inputs are invalid.
 
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-START OF NOTES (to be deleted)
+    ![screenshot](documentation/validation/defensive/repeatedly_invalid.png)
 
-This section is primarily used for JavaScript and Python applications,
-but feel free to use this section to document any HTML/CSS bugs you might run into.
+    - To fix this, I ensured that the user input is correctly captured and validated. I provided clear guidance to the user on expected inputs and added validation to check if the input is among the valid options ('1', '2', '3', or '4').
 
-It's very important to document any bugs you've discovered while developing the project.
-Make sure to include any necessary steps you've implemented to fix the bug(s) as well.
+- Python raises `TypeError` when trying to access questions in `run.py`.
 
-**PRO TIP**: screenshots of bugs are extremely helpful, and go a long way!
+    ![screenshot](documentation/validation/defensive/type-error.png)
 
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
+    - To fix this, I corrected the key used to access the questions in the dictionary, ensuring it matches the correct data structure.
+- Arabic text not displayed correctly:
 
-- JS Uncaught ReferenceError: `foobar` is undefined/not defined
+  ![screenshot](documentation/validation/defensive/arabic-wrong-type.png)
 
-    ![screenshot](documentation/bugs/bug01.png)
+  - To fix this, I used the `arabic_reshaper` and `bidi.algorithm` libraries to properly format and display Arabic text.
 
-    - To fix this, I _____________________.
+- Python raises `NoneType` object is not subscriptable error in `compare_answer` function:
 
-- JS `'let'` or `'const'` or `'template literal syntax'` or `'arrow function syntax (=>)'` is available in ES6 (use `'esversion: 11'`) or Mozilla JS extensions (use moz).
+  ![screenshot](documentation/validation/defensive/nontype.png)
 
-    ![screenshot](documentation/bugs/bug02.png)
-
-    - To fix this, I _____________________.
-
-- Python `'ModuleNotFoundError'` when trying to import module from imported package
-
-    ![screenshot](documentation/bugs/bug03.png)
-
-    - To fix this, I _____________________.
-
-- Django `TemplateDoesNotExist` at /appname/path appname/template_name.html
-
-    ![screenshot](documentation/bugs/bug04.png)
-
-    - To fix this, I _____________________.
-
-- Python `E501 line too long` (93 > 79 characters)
-
-    ![screenshot](documentation/bugs/bug04.png)
-
-    - To fix this, I _____________________.
+  - To fix this, I ensured that `get_question` returns a valid dictionary and that the `question_data` variable is correctly assigned before being used in the `compare_answer` function.
 
 ## Unfixed Bugs
 
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-START OF NOTES (to be deleted)
 
-You will need to mention unfixed bugs and why they were not fixed.
-This section should include shortcomings of the frameworks or technologies used.
-Although time can be a big variable to consider, paucity of time and difficulty understanding
-implementation is not a valid reason to leave bugs unfixed.
+- Arabic Text Alignment Issue**: 
+  - Sometimes, during the reshaping of Arabic text, there might be alignment issues, especially when the text contains a mix of Arabic and non-Arabic characters. This could lead to misalignment in the output, impacting readability.
+  
+    ![screenshot](documentation/validation/defensive/arabic_not_fix.png)
 
-If you've identified any unfixed bugs, no matter how small, be sure to list them here.
-It's better to be honest and list them, because if it's not documented and an assessor finds the issue,
-they need to know whether or not you're aware of them as well, and why you've not corrected/fixed them.
+    - Attempted fix: Implement more robust text alignment algorithms or consider alternative approaches to handle mixed Arabic and non-Arabic text alignment.
 
-Some examples:
+- Commit Message Convention: 
+  - Some commit messages begin with lowercase letters instead of starting with an uppercase letter and using imperative mood, which can affect readability and consistency. I will ensure to address this in future commits.
 
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
-
-- On devices smaller than 375px, the page starts to have `overflow-x` scrolling.
-
-    ![screenshot](documentation/bugs/unfixed-bug01.png)
-
-    - Attempted fix: I tried to add additional media queries to handle this, but things started becoming too small to read.
-
-- For PP3, when using a helper `clear()` function, any text above the height of the terminal does not clear, and remains when you scroll up.
-
-    ![screenshot](documentation/bugs/unfixed-bug02.png)
-
-    - Attempted fix: I tried to adjust the terminal size, but it only resizes the actual terminal, not the allowable area for text.
-
-- When validating HTML with a semantic `section` element, the validator warns about lacking a header `h2-h6`. This is acceptable.
-
-    ![screenshot](documentation/bugs/unfixed-bug03.png)
-
-    - Attempted fix: this is a known warning and acceptable, and my section doesn't require a header since it's dynamically added via JS.
-
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-START OF NOTES (to be deleted)
-
-If you legitimately cannot find any unfixed bugs or warnings, then use the following sentence:
-
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
 
 > [!NOTE]  
 > There are no remaining bugs that I am aware of.
