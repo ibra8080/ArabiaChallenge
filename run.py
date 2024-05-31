@@ -30,7 +30,7 @@ def get_question(ques_num):
     question_data = questions[ques_num]
     print(reshape_text(question_data["question"]))  # Apply reshap_text
     for choice in question_data["choices"]:
-        print(reshape_text(choice))   # Apply reshap_text with choice
+        print(reshape_text(choice).rjust(40))   # Apply reshap_text with choice
     return question_data
 
 
