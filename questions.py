@@ -52,7 +52,7 @@ questions = [
             "1. Good morning", "2. Good night", "3. Good evening",
             "4. Goodbye"],
         "answer": "3"
-    }
+    },
     {
         "question": "What is the Arabic word for 'cat'?",
         "choices": ["1. كلب", "2. فأر", "3. طائر", "4. قطة"],
@@ -103,4 +103,5 @@ questions = [
         "choices": ["1. قبيح", "2. جميل", "3. عادي", "4. فظيع"],
         "answer": "2"
     }
+    
 ]
