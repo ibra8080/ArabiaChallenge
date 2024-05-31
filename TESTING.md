@@ -47,21 +47,15 @@ I've tested my deployed project using the Lighthouse Audit tool to check for any
 
 Defensive programming was manually tested with the below user acceptance testing:
 
-| Page | Expectation | Test | Result | Fix | Screenshot |
-| --- | --- | --- | --- | --- | --- |
-| Home | | | | | |
-| | Feature is expected to do X when the user does Y | Tested the feature by doing Y | The feature behaved as expected, and it did Y | Test concluded and passed | ![screenshot](documentation/features/feature01.png) |
-| | Feature is expected to do X when the user does Y | Tested the feature by doing Y | The feature did not respond to A, B, or C. | I did Z to the code because something was missing | ![screenshot](documentation/features/feature02.png) |
-| About | | | | | |
-| | Feature is expected to do X when the user does Y | Tested the feature by doing Y | The feature behaved as expected, and it did Y | Test concluded and passed | ![screenshot](documentation/features/feature03.png) |
-| | Feature is expected to do X when the user does Y | Tested the feature by doing Y | The feature did not respond to A, B, or C. | I did Z to the code because something was missing | ![screenshot](documentation/features/feature04.png) |
-| Gallery | | | | | |
-| | Feature is expected to do X when the user does Y | Tested the feature by doing Y | The feature behaved as expected, and it did Y | Test concluded and passed | ![screenshot](documentation/features/feature05.png) |
-| | Feature is expected to do X when the user does Y | Tested the feature by doing Y | The feature did not respond to A, B, or C. | I did Z to the code because something was missing | ![screenshot](documentation/features/feature06.png) |
-| Contact | | | | | |
-| | Feature is expected to do X when the user does Y | Tested the feature by doing Y | The feature behaved as expected, and it did Y | Test concluded and passed | ![screenshot](documentation/features/feature07.png) |
-| | Feature is expected to do X when the user does Y | Tested the feature by doing Y | The feature did not respond to A, B, or C. | I did Z to the code because something was missing | ![screenshot](documentation/features/feature08.png) |
-| repeat for all remaining pages | x | x | x | x | x |
+| Function | Expectation | Test| Result | Fix | Screenshot |
+|----|----|----|----|----|----|
+| `request_answer` | Users must enter a valid answer (1, 2, 3, or 4) | Entered a valid answer (e.g., '2')   | Answer accepted and validated as expected | Test concluded and passed | ![screenshot](documentation/features/requestanswer_valid.png)  |
+|                  | Users cannot submit an empty answer                                                             | Pressed Enter without typing         | Error message displayed and prompted for input again           | Test concluded and passed            | ![screenshot](documentation/features/request_answer_empty.png)   |
+| `validate_answer`| Answers must be validated to ensure they are within the specific list (1, 2, 3, or 4)            | Entered a valid answer (e.g., '3')   | Validation successful                                          | Test concluded and passed | ![screenshot](documentation/features/validate_answer_valid.png)  |
+|                  | Entered an invalid answer (e.g., '0')                                                            | Error message displayed | Test concluded and passed | ![screenshot](documentation/features/validate_answer_invalid.png)|
+| `asking_replay`  | Users must choose from a specific list only ('yes' or 'no')                                      | Entered 'yes' | Game restarted as expected | Test concluded and passed | ![screenshot](documentation/features/asking_replay_yes.png) |
+| | Entered 'no' | Game ended as expected | Test concluded and passed | ![screenshot](documentation/features/asking_replay_no.png) |
+| | Users cannot submit an invalid answer for replay prompt                                         | Entered an invalid answer (e.g., 'maybe') | Error message displayed and prompted for input again  | Test concluded and passed | ![screenshot](documentation/features/asking_replay_invalid.png) |
 
 🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-START OF NOTES (to be deleted)
 
