@@ -96,7 +96,8 @@ def asking_replay():
         if replay in ['yes', 'no']:
             return replay
         else:
-            print(Fore.RED + "Invalid input. Please enter 'yes' or 'no'.")
+            print(
+                Fore.RED + f"{replay} is invalid. Please enter 'yes' or 'no'.")
 
 
 def main():
