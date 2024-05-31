@@ -94,6 +94,7 @@ def asking_replay():
     while True:
         replay = input("Do you want to play again? (yes/no): ").strip().lower()
         if replay in ['yes', 'no']:
+            clear()
             return replay
         else:
             print(
@@ -118,6 +119,7 @@ def main():
         final_score(len(questions), score)
 
         if asking_replay() == "no":
+            clear()
             print(Fore.YELLOW + "Thank you for playing. Goodbye!")
             break
 

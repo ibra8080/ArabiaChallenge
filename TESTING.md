@@ -53,8 +53,8 @@ Defensive programming was manually tested with the below user acceptance testing
 |.  | Users cannot submit an empty answer                                                             | Pressed Enter without typing         | Error message displayed and prompted for input again           | Test concluded and passed            | ![screenshot](documentation/validation/defensive/without_type.png)   |
 | `validate_answer`| Answers must be validated to ensure they are within the specific list (1, 2, 3, or 4)| Entered a valid answer (e.g., '2')   | Validation successful| Test concluded and passed | ![screenshot](documentation/validation/defensive/valid_answer.png)  | 
 |   | Entered an invalid answer (e.g., 'sfs')| Error message displayed | Test concluded and passed | ![screenshot](documentation/validation/defensive/sfs.png)|
-| `asking_replay`  | Users must choose from a specific list only ('yes' or 'no')                                      | Entered 'yes' | Game restarted as expected | Test concluded and passed | ![screenshot](documentation/features/asking_replay_yes.png) |
-| | Entered 'no' | Game ended as expected | Test concluded and passed | ![screenshot](documentation/features/asking_replay_no.png) |
+| `asking_replay`  | Users must choose from a specific list only ('yes' or 'no')                                      | Entered 'yes' | Game restarted as expected | Test concluded and passed | ![screenshot](documentation/validation/defensive/yes.png) |
+|  |  | Entered 'no' | Game ended as expected | Test concluded and passed | ![screenshot](documentation/validation/defensive/no.png) |
 | | Users cannot submit an invalid answer for replay prompt                                         | Entered an invalid answer (e.g., 'maybe') | Error message displayed and prompted for input again  | Test concluded and passed | ![screenshot](documentation/features/asking_replay_invalid.png) |
 
 🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-START OF NOTES (to be deleted)
