@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="progress">
+    Question {{ question_num }} of {{ total_questions }}
+</div>
+
+<div class="question arabic-text">
+    {{ question }}
+</div>
+
+<form method="POST" action="{{ url_for('answer') }}">
+    <div class="choices">
+        {% for i in range(choices|length) %}
+        <label class="choice">
+            <input type="radio" name="answer" value="{{ i + 1 }}" required>
+            <span class="arabic-text">{{ choices[i] }}</span>
+        </label>
+        {% endfor %}
+    </div>
+    
+    <div style="text-align: center; margin-top: 30px;">
+        <button type="submit" class="btn">Submit Answer ✓</button>
+    </div>
+</form>
+{% endblock %}

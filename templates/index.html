@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div style="text-align: center;">
+    <h2>Welcome to ArabiaChallenge! 🎯</h2>
+    <p>Test and enhance your Arabic language skills with our interactive quiz game.</p>
+    
+    <div class="arabic-text">
+        <h3>أهلاً وسهلاً بكم في تحدي العربية</h3>
+        <p>اختبر وطور مهاراتك في اللغة العربية من خلال لعبة الأسئلة التفاعلية</p>
+    </div>
+    
+    <div style="margin: 30px 0;">
+        <p><strong>Features:</strong></p>
+        <ul style="text-align: left; display: inline-block;">
+            <li>20 Arabic vocabulary questions</li>
+            <li>Multiple choice format</li>
+            <li>Instant feedback</li>
+            <li>Score tracking</li>
+            <li>Beautiful Arabic text display</li>
+        </ul>
+    </div>
+    
+    <a href="{{ url_for('start_quiz') }}" class="btn btn-success" style="font-size: 20px; padding: 15px 30px;">
+        🚀 Start Quiz
+    </a>
+</div>
+{% endblock %}
