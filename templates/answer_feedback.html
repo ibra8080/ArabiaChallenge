@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div style="text-align: center;">
+    {% if is_correct %}
+        <h2 class="correct">✅ Correct!</h2>
+        <p style="color: #28a745; font-size: 18px;">Well done! You got it right.</p>
+    {% else %}
+        <h2 class="incorrect">❌ Incorrect</h2>
+        <p style="color: #dc3545; font-size: 18px;">
+            The correct answer was: <strong>{{ correct_answer }}</strong>
+        </p>
+    {% endif %}
+    
+    <div class="score">
+        Current Score: {{ score }}
+    </div>
+    
+    <a href="{{ url_for('quiz') }}" class="btn">Next Question →</a>
+</div>
+{% endblock %}
